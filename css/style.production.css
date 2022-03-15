@@ -78,6 +78,7 @@ body {
 }
 
 h1 {
+  background-color: inherit;
   font-size: 30px;
   font-weight: 700;
   font-variant: small-caps;
@@ -85,6 +86,7 @@ h1 {
 }
 
 h2 {
+  background-color: inherit;
   font-size: 24px;
   font-weight: 700;
   font-variant: small-caps;
@@ -92,6 +94,7 @@ h2 {
 }
 
 h3 {
+  background-color: inherit;
   font-size: 18px;
   font-weight: 700;
   font-variant: small-caps;
@@ -99,9 +102,11 @@ h3 {
 }
 
 a {
+  background-color: inherit;
   color: var(--primary-color);
 }
 a:visited {
+  background-color: inherit;
   color: var(--primary-color);
 }
 
@@ -112,7 +117,7 @@ a:hover, a:focus {
 .button, button {
   border: none;
   display: inline-block;
-  font-family: inherit;
+  font-family: 'Fredoka', sans-serif;
   background-color: var(--secondary-color);
   color: white;
   text-decoration: none;
@@ -134,14 +139,15 @@ button:focus,
 
 button {
   border: none;
-  font-family: inherit;
-  background-color: var(--primary-color);
+  font-family: 'Fredoka', sans-serif;
+  background-color: Var(--primary-color);
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
+
 button:hover, button:focus {
   cursor: pointer;
   opacity: 0.8;
@@ -199,6 +205,7 @@ to {
 }
 .project-list__item {
   background-color: var(--secondary-color);
+  color: var(--text-color);
   width: auto;
   min-height: auto;
   margin: 0;
