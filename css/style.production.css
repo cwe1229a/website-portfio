@@ -24,7 +24,9 @@ Background Color (Lemon Meringue): #F8F0C8;
   --background-color: #F8F0C8;
   --text-color: #bb4430;
 }
-
+span {
+  background: var(--primary-color);
+}
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +220,7 @@ to {
   grid-row: 1 / 3;
 }
 .page-footer {
+  background-color: gold;
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
