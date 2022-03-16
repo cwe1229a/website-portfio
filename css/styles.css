@@ -10,7 +10,7 @@ Colors used
 
 Text Color (Orange Golden Gate Bridge): #bb4430;
 Primary Color (midnight blue): #03045e;
-Secondary Color (Middle Blue): #75b9cc;
+Secondary Color (maximum yellow red): #f2ba49;
 Background Color (Lemon Meringue): #f8f0c8;
  */
 
@@ -21,7 +21,7 @@ Background Color (Lemon Meringue): #f8f0c8;
 
 :root {
   --primary-color: #03045e;
-  --secondary-color: #f8c361;
+  --secondary-color: #f2ba49;
   --background-color: #f8f0c8;
   --text-color: #bb4430;
 }
