@@ -1,33 +1,17 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
-/*
-Colors used
-
-Text Color (Orange Golden Gate Bridge): #bb4430;
-Primary Color (midnight blue): #03045e;
-Secondary Color (maximum yellow red): #f2ba49;
-Background Color (Lemon Meringue): #f8f0c8;
- */
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #03045e;
-  --secondary-color: #f2ba49;
-  --background-color: #f8f0c8;
-  --text-color: #bb4430;
+  --primary-color: #3ab87f;
+  --secondary-color: #fec118;
+  --background-color: #ffffff;
+  --text-color: #d7680b;
 }
 
 span {
-  background: var(--primary-color);
+  background: var(--background-color);
 }
 
 .page-header {
@@ -72,9 +56,9 @@ span {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #ffffff;
   text-align: center;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -124,9 +108,9 @@ a:focus {
 button {
   border: none;
   display: inline-block;
-  font-family: 'Fredoka', sans-serif;
-  background-color: var(--secondary-color);
-  color: white;
+  font-family: "Fredoka", sans-serif;
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -144,7 +128,7 @@ button:focus,
 
 button {
   border: none;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
@@ -195,7 +179,7 @@ button:focus {
 }
 
 .project-list__item {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
   width: auto;
   min-height: auto;
@@ -208,7 +192,7 @@ button:focus {
 }
 
 .page-footer {
-  background-color: #f49e4c;
+  background-color: var(--secondary-color);
   clear: both;
   display: flex;
   flex-direction: column;
@@ -221,6 +205,22 @@ button:focus {
   }
 }
 
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .project-list {
+    grid-gap: 10px;
+  }
+}
+
+.project-list__item:last-child {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
+}
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
