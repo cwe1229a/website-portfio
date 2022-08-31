@@ -60,6 +60,12 @@ body {
   color: #000000;
 }
 
+.meetapp__icon {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
 h1 {
   background-color: inherit;
   font-size: 30px;
