@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Crabby Courtney's Coding</title>
+    <title>Courtney Webster's Portfolio Website</title>
     <link rel="shortcut icon" href="./img/favicon-16x16.png" />
     <link
       rel="stylesheet"
@@ -13,64 +13,33 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
+    <section class="header">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">WORK</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
-
-    <div class="profile">
-      <img
-        src="img/newlogo.jpeg"
-        class="profile__portrait"
-        alt="Courtney Portrait"
-      />
-      <h1>Hello World!</h1>
-      <p>
-        My name is Courtney Webster. I am a <span>web</span> development student
-        from the United States.
-      </p>
-      <a href="https://github.com/cwe1229a">Check out some of my code</a>
-    </div>
-
-    <footer class="page-footer">
-      <div class="social media">
-        <a href="https://github.com/cwe1229a"
-          ><img src="img/githubsvg.svg" alt="Github"
-        /></a>
-        <img src="img/twittersvg.svg" alt="Twitter" />
-        <a href="https://www.linkedin.com/in/courtney-webster-4b18228b"></a
-        ><img src="img/linkedinsvg.svg" alt="LinkedIn" />
+      <div class="intro-text">
+        <p>Hi!</p>
+        <p>My name is Courtney</p>
       </div>
-      <script src="js/tota11y.min.js"></script>
-    </footer>
+      <div class="home-text-wrapper">
+        <div class="static-text">
+          <p>I'm&nbsp;</p>
+        </div>
+        <ul class="dynamic-text">
+          <li><span> a Web Developer</span></li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
