@@ -18,22 +18,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <section class="header">
-      <nav>
-        <div class="nav-links">
+    <header id="header"
+    <div class="container">
+      <nav class="main-nav">
+        
           <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="work.html">WORK</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
-        </div>
+        
       </nav>
+    </div>
+    </header>
       <!--HOME-->
+      <section class="intro" id="home">
       <div class="intro-text">
         <p>Hi!</p>
         <p>My name is Courtney</p>
       </div>
+      <div class="profile">
+        <img
+          src="img/Capture.PNG"
+          class="profile__portrait"
+          alt="Courtney Portrait"
+        />
+        </div>
       <div class="home-text-wrapper">
         <div class="static-text">
           <p>I'm&nbsp;</p>
@@ -42,18 +53,12 @@
           <li><span> a Web Developer</span></li>
         </ul>
       </div>
-      <div class="profile">
-        <img
-          src="img/Capture.PNG"
-          class="profile__portrait"
-          alt="Courtney Portrait"
-        />
-      </div>
     </section>
     <!--ABOUT-->
-    <selection class="about">
+    <selection class="about" id="about">
       <div class="who">
         <h1>Who?</h1>
+        <a href="#" type="button" class="cta">Resume</a>
         <p>
           I am a beginner in Web Development and have been spending the last few
           months learning and creating coding projects<br> to better become a junior
@@ -61,9 +66,9 @@
           You never stop being a student if you are passionate about what you
           want to achieve!
         </p>
-
+       
         </div>
-        <h2>Some little tidbits about me...</h2>
+        <h2>Some tidbits about me...</h2>
         <div class="tidbits">
           <ul>
             <li>
@@ -77,6 +82,7 @@
             </li>
           </ul>
         </div>
+
       </div>
       <div class="icons">
         <i class="fa-brands fa-css3-alt"></i>
@@ -87,10 +93,11 @@
         <i class="fa-brands fa-bootstrap"></i>
         <i class="fa-brands fa-angular"></i>
       </div>
+      
     </selection>
     <!-- WORK -->
 
-    <section class="work">
+    <section class="work" id="work">
 
       <h1>Projects I've done</h1>
 
@@ -168,7 +175,7 @@
         </div>
     </section>
 <!-- CONTACT -->
-<selection class="contact">
+<selection class="contact" id="contact">
 <h1>Get in touch with me</h1>
 
 <div class="contact-box">
@@ -177,7 +184,7 @@
 <input type="email" placeholder="Enter Email">
 <input type="telephone" placeholder="Enter phone #">
 <textarea rows="5" placeholder="Any comment"></textarea>
-<button type="submit" class="submit-btn">SUBMIT</button>
+<button type="submit" class="cta">SUBMIT</button>
 </form>
 </div>
 <div class="social media">

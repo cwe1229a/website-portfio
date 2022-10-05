@@ -6,6 +6,9 @@
   background: rgb(41, 41, 41);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* main colors */
 :root {
   --primary-color: #be4e31;
@@ -19,43 +22,35 @@ a:visited {
   color: var(--primary-color);
 }
 
-/* main home page css */
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background: rgb(41, 41, 41);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
 /* nav/menu bar css */
-nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
+#header {
+  background: rgb(41, 41, 41);
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
-.nav-links {
-  flex: 1;
+.main-nav {
+  flex: 0 1 200px;
   text-align: right;
 }
 
-.nav-links ul li {
+.main-nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
-  position: relative;
+  padding: 0;
+  margin-left: 10;
 }
 
-.nav-links ul li a {
+.main-nav ul li a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 20px;
 }
 
-.nav-links ul li::after {
+.main-nav ul li::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -65,16 +60,29 @@ nav {
   transition: 0.5s;
 }
 
-.nav-links ul li:hover::after {
+.main-nav ul li:hover::after {
   width: 100%;
 }
 
 /* home content css */
 
+/* main home page css */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(41, 41, 41);
+  background-position: center;
+  background-size: cover;
+}
+
+.intro {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
 .intro-text {
-  padding: 80px;
   text-align: center;
-  justify-content: center;
+  padding-top: 80px;
   color: var(--text-color);
   font-size: 60px;
 }
@@ -90,14 +98,15 @@ nav {
 }
 
 .profile {
-  padding-top: 170px;
+  padding-top: 300px;
+  padding-bottom: 80px;
   margin: 0 auto;
 }
 
 /* home text animation */
 .home-text-wrapper {
   display: flex;
-  width: 90%;
+  width: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,8 +122,8 @@ nav {
 
 .wrapper .dynamic-text {
   margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
+  height: 70px;
+  line-height: 70px;
   overflow: hidden;
 }
 
@@ -166,14 +175,32 @@ nav {
 
 .about h1 {
   font-size: 50px;
-  padding: 12px;
+  padding-top: 12px;
   color: var(--text-color);
 }
 
 .about h2 {
   font-size: 35px;
-  padding: 15px;
+  padding-top: 15px;
   color: var(--text-color);
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.cta:hover {
+  color: white;
+  background-color: var(--primary-color);
 }
 
 .tidbits ul li {
