@@ -11,6 +11,7 @@
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
   background: rgb(41, 41, 41);
+  box-sizing: border-box;
 }
 
 html {
@@ -19,7 +20,7 @@ html {
 /* main colors */
 :root {
   --primary-color: #be4e31;
-  --secondary-color: #409c6a;
+  --secondary-color: #5cb182;
   --background-color: rgb(41, 41, 41);
   --text-color: #ebe9e9;
 }
@@ -326,6 +327,29 @@ a:visited {
   color: var(--text-color);
 }
 
+.workbutton {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  transition-property: background-color, color;
+}
+
+.workbutton:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+}
+
 .project-pic {
   border: 5px solid var(--primary-color);
   border-radius: 25%;
@@ -337,7 +361,7 @@ a:visited {
     display: inline-grid;
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 15px;
     margin: 0;
     row-gap: 20px;
     padding-top: 20px;
@@ -346,14 +370,15 @@ a:visited {
 
 .project-grid h3 {
   color: var(--secondary-color);
-  font-size: 30px;
+  font-size: 38px;
   padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .project-grid p {
   color: var(--text-color);
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .project-item {
