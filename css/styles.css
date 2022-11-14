@@ -219,7 +219,9 @@ a:visited {
 }
 
 .icons-wrapper {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
   color: var(--primary-color);
   padding: 45px;
   font-size: 70px;
